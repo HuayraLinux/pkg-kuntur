@@ -1,0 +1,52 @@
+Source: kuntur
+Section: unknown
+Priority: optional
+Maintainer: Fernando Toledo <ragnarok@docksud.com.ar>
+Build-Depends: debhelper (>= 9), python (>= 2.3.7), cmake (>= 2.8),
+    libboost-system-dev (>= 1.48),
+    libboost-filesystem-dev (>= 1.48),
+    libboost-thread-dev (>= 1.48),
+    libboost-math-dev (>= 1.48),
+    libboost-signals-dev (>= 1.48),
+    liblua5.1-0-dev (>= 5.1),
+    libcurl4-gnutls-dev (>= 7.38),
+    libxerces-c-dev (>= 2.8),
+    libev-dev (>= 4.15),
+    libpango1.0-dev (>= 1.36),
+    libcairo2-dev (>= 1.12),
+    libgdk-pixbuf2.0-dev (>= 2.30),
+    libglib2.0-dev (>= 2.40),
+    libgtk2.0-dev (>= 2.24),
+    libvlc-dev (>= 2.2),
+    libdb-dev (>= 5.3)
+Standards-Version: 3.9.5
+Homepage: http://tvd.lifia.info.unlp.edu.ar/ginga.ar/index.php/kunturmenu
+Vcs-Git: https://github.com/HuayraLinux/pkg-kuntur.git
+Vcs-Browser: https://github.com/HuayraLinux/pkg-kuntur
+
+Package: kuntur
+Architecture: i386 amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Software de recepción y el middleware Ginga.ar
+ El nombre Kuntur significa en cóndor, en Quechua. Para los Incas el cóndor o 
+ Apu Kuntur era un "Mensajero de los Dioses" que voló hacia el nivel superior 
+ del mundo religioso (el Hanan Pacha) para luego llevar las plegarias a los 
+ dioses. Es la unión entre el Hanan Pacha con el Kay Pacha (el suelo, el nivel 
+ medio del mundo religioso). Representa la inteligencia y enaltecimiento o 
+ exaltación. Todos los días el cóndor eleva el sol sobre el cielo. Las 
+ tradiciones cuentan que un cóndor muerto cayó en la "Casa de las vírgenes del 
+ Sol", lo que fue interpretado como un anuncio de la destrucción del 
+ Tahuantinsuyo.
+ .
+ Kuntur contiene software de recepción (zapper) y el middleware para soportar 
+ la interactividad (Ginga.ar) ya integrados. A partir de este software se puede 
+ construir firmware de recepción que soporta la descarga y ejecución de 
+ aplicaciones interactivas. Ejemplos de esto son Zamba y Wari, los cuales ya 
+ fueron publicados con anterioridad y se encuentran incluídos en este release, 
+ ahora integrados a Ginga.ar.
+ . 
+ Kuntur además incluye un conjunto de tests que permiten validar la 
+ implementación de las APIs de las cuales depende,  y así  acelerar los tiempos 
+ de deployment y porting.
+ .
+ Este trabajo ha sido posible gracias al apoyo económico de ARSAT.
