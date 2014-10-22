@@ -22,15 +22,13 @@ include /usr/share/dpkg/default.mk
 	dh $@ 
 
 export DEPOT=$(CURDIR)
-export BUILD_SHARED=1
-export COMPILE_TESTS=0
-export RUN_TESTS=0
+export USER_CONFIG_FILE=$(CURDIR)/debian/SetupGlobal.cmake
 
 override_dh_auto_build:
 	mkdir -p $$DEPOT/install/build/UNIX
-	cd $$DEPOT/install/build/UNIX ; $$DEPOT/build/build.py --tool zamba
-	cd $$DEPOT/install/build/UNIX ; $$DEPOT/build/build.py --tool ginga
-	cd $$DEPOT/install/build/UNIX ; $$DEPOT/build/build.py --tool wari
+	cd $$DEPOT/install/build/UNIX ; $$DEPOT/build/build.py --verbose=10 --tool ginga
+	cd $$DEPOT/install/build/UNIX ; $$DEPOT/build/build.py --verbose=10 --tool wari
+	cd $$DEPOT/install/build/UNIX ; $$DEPOT/build/build.py --verbose=10 --tool zamba
 	dh_auto_build
 
 override_dh_auto_clean:
