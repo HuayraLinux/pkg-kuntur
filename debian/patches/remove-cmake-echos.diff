@@ -1,0 +1,20 @@
+Index: pkg-kuntur/kuntur-2.2/config/Impl.cmake
+===================================================================
+--- pkg-kuntur.orig/config/Impl.cmake	2013-11-21 11:45:06.000000000 -0300
++++ pkg-kuntur/config/Impl.cmake	2015-01-13 13:37:31.697756390 -0300
+@@ -878,15 +878,10 @@
+ 
+ 	# Add target to build
+ 	ADD_CUSTOM_TARGET(${name} ${_all}
+-		COMMAND cmake -E echo ${cmake_cmd}
+ 		COMMAND ${cmake_cmd}
+-		COMMAND cmake -E echo ${build_cmd}
+ 		COMMAND ${build_cmd}
+-		COMMAND cmake -E echo "test! ..."
+ 		COMMAND ctest -V  # run tests
+-		COMMAND cmake -E echo ${install_cmd}
+ 		COMMAND ${install_cmd}
+-		COMMAND cmake echo -E ${pack_cmd}
+ 		COMMAND ${pack_cmd}                             # and pack if requested
+ 		WORKING_DIRECTORY "${build_dir}"
+ 		VERBATIM
