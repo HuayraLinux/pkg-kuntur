@@ -1,0 +1,7 @@
+install.UNIX/rootfs/bin/wari usr/bin
+install.UNIX/rootfs/share/wari usr/share
+install.UNIX/rootfs/share/applications/wari.desktop usr/share/applications
+
+
+
+

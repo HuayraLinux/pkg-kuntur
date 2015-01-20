@@ -1,0 +1,3 @@
+install.UNIX/rootfs/bin/zamba usr/bin
+install.UNIX/rootfs/share/zamba usr/share
+debian/zamba.desktop usr/share/applications

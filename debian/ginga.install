@@ -1,0 +1,4 @@
+install.UNIX/rootfs/bin/ginga usr/bin
+install.UNIX/rootfs/share/ginga usr/share
+
+

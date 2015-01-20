@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Name=Zamba
+GenericName=Zamba Player
+Comment[es]=Reproductor de TV digital Zamba
+Exec=/usr/bin/zamba
+Icon=/usr/share/zamba/imgs/icon.png
+Terminal=false
+TerminalOptions=
+Type=Application
+Categories=AudioVideo;Player;
+MimeType=video/mpeg;
+StartupNotify=true
+Keywords=Player;Audio;Video;
