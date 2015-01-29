@@ -18,6 +18,7 @@ Build-Depends: debhelper (>= 9), python (>= 2.3.7), cmake (>= 2.8), quilt,
     libglib2.0-dev (>= 2.40),
     libgtk2.0-dev (>= 2.24),
     libvlc-dev (>= 2.2),
+    libvlccore-dev (>= 2.2),
     libdb-dev (>= 5.3)
 Standards-Version: 3.9.5
 Homepage: http://tvd.lifia.info.unlp.edu.ar/ginga.ar/index.php/kunturmenu

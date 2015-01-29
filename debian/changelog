@@ -1,3 +1,9 @@
+kuntur (2.2-2) unstable; urgency=medium
+
+  * patch para poner vlc como player por defecto
+
+ -- Fernando Toledo <ragnarok@docksud.com.ar>  Thu, 29 Jan 2015 15:14:11 -0300
+
 kuntur (2.2-1) unstable; urgency=low
 
   * Initial release

@@ -1,0 +1,27 @@
+Description: Set default player to vlc
+Author: Fernando Toledo <ragnarok@docksud.com.ar>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: https://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+--- kuntur-2.2.orig/lib/dtv-canvas/deps.cmake
++++ kuntur-2.2/lib/dtv-canvas/deps.cmake
+@@ -5,7 +5,7 @@ DEF_OPTIONS(SYS_WINDOW fb aml egl)
+ DEF_OPTIONS(SYS_X11_RENDER cairo gl)
+ DEF_OPTIONS(SYS_INPUT lirc linux)
+ DEF_OPTIONS(SYS_HTML cef gtk)
+-DEF_OPTIONS(SYS_PLAYER vlc xine gst)
++DEF_OPTIONS(SYS_PLAYER vlc DEFAULT xine gst vlc on)
+ DEF_OPTIONS(CANVAS remote DEFAULT remote on)
+ 
+ ADD_BOOST_COMPONENTS(system filesystem thread math_tr1)
