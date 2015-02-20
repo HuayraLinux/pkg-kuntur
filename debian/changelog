@@ -1,3 +1,9 @@
+kuntur (2.2-3) unstable; urgency=medium
+
+  * patch para cambiar directorio de configuraciones por defecto a home
+
+ -- Matias De lellis <mati86dl@gmail.com>  Fri, 20 Feb 2015 12:29:43 -0300
+
 kuntur (2.2-2) unstable; urgency=medium
 
   * patch para poner vlc como player por defecto
