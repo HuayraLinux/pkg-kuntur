@@ -1,3 +1,5 @@
 remove-cmake-echos.diff
 vlc_as_default.diff
 use_home_data.diff
+zapper_to_ts.diff
+dvb_api_version.diff

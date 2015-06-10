@@ -1,0 +1,11 @@
+--- kuntur-2.2.orig/lib/dtv-mpegparser/src/provider/dvb/frontend.cpp	2013-11-15 12:49:47.000000000 -0300
++++ kuntur-2.2/lib/dtv-mpegparser/src/provider/dvb/frontend.cpp	2015-06-08 10:20:41.627991926 -0300
+@@ -103,7 +103,7 @@
+ bool Frontend::setFrequency( int freq, int khBandwidth ) {
+ 	LDEBUG( "Frontend", "Tune started begin: freq=%d, bandwidth=%d", freq, khBandwidth );
+ 
+-#if DVB_API_VERSION == 5 && DVB_API_VERSION_MINOR <= 5
++#if DVB_API_VERSION == 5 && DVB_API_VERSION_MINOR <= 11
+ 	struct dvb_frontend_parameters param;	
+ 	
+ 	memset( &param, 0, sizeof(dvb_frontend_parameters) );

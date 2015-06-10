@@ -1,0 +1,11 @@
+--- kuntur-2.2.orig/lib/dtv-zapper/CMakeLists.txt	2013-11-21 10:50:51.000000000 -0300
++++ kuntur-2.2/lib/dtv-zapper/CMakeLists.txt	2015-06-08 11:05:39.207912221 -0300
+@@ -11,7 +11,7 @@
+ ENDIF()
+ 
+ # MPEG player to use
+-SetIfEmpty( ZAPPER_MPEG_PLAYER \"av\" )
++SetIfEmpty( ZAPPER_MPEG_PLAYER \"ts\" )
+ 
+ # Shutdown
+ SetIfEmpty( ZAPPER_CAN_SHUTDOWN 1 )

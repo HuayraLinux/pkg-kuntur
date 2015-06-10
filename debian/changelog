@@ -1,3 +1,11 @@
+kuntur (2.2-4) torbellino; urgency=medium
+
+  * Adds patches provided by Arsat.
+    - dvb_api_version.diff: Use old api to tunner.
+    - zapper_to_ts.diff: Use ts as default player.
+
+ -- Matias De lellis <mati86dl@gmail.com>  Mon, 08 Jun 2015 13:06:53 -0300
+
 kuntur (2.2-3) unstable; urgency=medium
 
   * patch para cambiar directorio de configuraciones por defecto a home
