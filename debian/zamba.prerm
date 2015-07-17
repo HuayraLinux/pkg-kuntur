@@ -5,7 +5,7 @@ if [ "$1" = "remove" -o "$1" = "deconfigure" ];
 then
 
     echo "Activando plugin de lua de vlc"
-    if [ -f /usr/lib/vlc/plugins/lua/liblua_plugin.so.DISABLED_BY_ZAMBA ];
+    if [ -f /usr/lib/vlc/plugins/lua/liblua_plugin.so.DISABLED_BY_ZAMBA ]; then
         mv /usr/lib/vlc/plugins/lua/liblua_plugin.so.DISABLED_BY_ZAMBA /usr/lib/vlc/plugins/lua/liblua_plugin.so
     fi
 
