@@ -66,7 +66,7 @@ Description: Software de recepción y el middleware Ginga.ar
 
 Package: wari
 Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends},
     libdtvcanvas (= ${binary:Version}),
     libdtvconnector (= ${binary:Version}),
     libdtvgingaplayer (= ${binary:Version}),
@@ -105,7 +105,7 @@ Description: Software de recepción y el middleware Ginga.ar
 
 Package: zamba
 Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends},
     libdtvcanvas (= ${binary:Version}),
     libdtvconnector (= ${binary:Version}),
     libdtvgingaplayer (= ${binary:Version}),

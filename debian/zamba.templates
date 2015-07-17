@@ -1,0 +1,11 @@
+Template: kuntur/prompt-vlc-lua
+Type: boolean
+Default: true
+Description: Desactivar plugn de lua en VLC
+ Este paquete tiene una incompatibilidad con el plugin de Lua en VLC
+ .
+ Indique si desea desactivar el plugin en vlc.
+ Esto soluciona problemas de reproducción de video en Zamba pero pierde 
+ ciertas funcionalidad en VLC.
+ .
+ Desea desactivarlo de todas forma?

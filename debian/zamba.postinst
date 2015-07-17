@@ -1,0 +1,27 @@
+#! /bin/sh
+set -e
+
+# Debconf
+. /usr/share/debconf/confmodule
+
+if [ "$1" = "configure" ]; then
+
+  db_version 2.0
+
+  db_get kuntur/prompt-vlc-lua
+
+  if [ "$RET" = "true" ]; then
+    if [ -f /usr/lib/vlc/plugins/lua/liblua_plugin.so ];
+      echo "Desactivando plugin de lua de vlc"
+      mv /usr/lib/vlc/plugins/lua/liblua_plugin.so /usr/lib/vlc/plugins/lua/liblua_plugin.so.DISABLED_BY_ZAMBA
+    fi
+  else
+    if [ -f /usr/lib/vlc/plugins/lua/liblua_plugin.so.DISABLED_BY_ZAMBA ];
+      echo "Activando plugin de lua de vlc"
+      mv /usr/lib/vlc/plugins/lua/liblua_plugin.so.DISABLED_BY_ZAMBA /usr/lib/vlc/plugins/lua/liblua_plugin.so
+    fi
+
+  fi
+fi
+
+#DEBHELPER#
