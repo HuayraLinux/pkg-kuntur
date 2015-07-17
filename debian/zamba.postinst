@@ -16,11 +16,10 @@ if [ "$1" = "configure" ]; then
       mv /usr/lib/vlc/plugins/lua/liblua_plugin.so /usr/lib/vlc/plugins/lua/liblua_plugin.so.DISABLED_BY_ZAMBA
     fi
   else
-    if [ -f /usr/lib/vlc/plugins/lua/liblua_plugin.so.DISABLED_BY_ZAMBA ];
+    if [ -f /usr/lib/vlc/plugins/lua/liblua_plugin.so.DISABLED_BY_ZAMBA ]; then
       echo "Activando plugin de lua de vlc"
       mv /usr/lib/vlc/plugins/lua/liblua_plugin.so.DISABLED_BY_ZAMBA /usr/lib/vlc/plugins/lua/liblua_plugin.so
     fi
-
   fi
 fi
 
